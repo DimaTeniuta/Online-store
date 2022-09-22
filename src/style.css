@@ -1,0 +1,135 @@
+@import "./components/styles/header.css";
+@import "./components/controller/goods/goods.css";
+@import "./components/styles/filter-value.css";
+@import "./components/styles/filter-range.css";
+@import "./components/styles/filter-sort.css";
+@import "./components/styles/messageBasket.css";
+@import "./components/styles/footer.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 50px 0;
+  background-image: url(./assets/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--color-white);
+}
+
+.main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main__container-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin: 20px 0 30px;
+  padding: 0 10px;
+}
+
+.main__container-product {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main__container-message {
+  display: flex;
+  max-width: 1600px;
+}
+
+.main__container-message.show {
+  display: none;
+}
+
+.main__container-message__title {
+  margin: 50px auto;
+  color: var(--color-white);
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1360px) {
+  
+  .main__container-product {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .main__container-filters {
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(300px, 800px));
+  }
+  
+  .main__container-product {
+    justify-content: center;
+    grid-template-columns: repeat(3, 320px);
+  }
+
+}
+
+@media (max-width: 1020px) {
+
+  .main__container-filters {
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(300px, 700px));
+  }
+
+  .main__container-product {
+    justify-content: center;
+    grid-template-columns: repeat(2, 320px);
+  }
+
+  .main__container-message__title {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main__container-product {
+    justify-content: center;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+}
+
+@media (max-width: 740px) {
+
+  .main__container-product {
+    justify-content: center;
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .main__container-message__title {
+    font-size: 18px;
+  }
+
+}
+
+
+
+

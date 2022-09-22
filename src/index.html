@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__logo-bascket" href="#"></a>
+          <h1 class="header__title">Online Store</h1>
+        </div>
+
+        <div class="header__bascket">
+          <span class="header__bascket__count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container-filters">
+        <div class="filter-value">
+          <h2 class="filter-value__title">Фильтры по значению</h2>
+          <div class="filter-value__brand">
+            <span class="filter-value__brand__text"> Производитель: </span>
+            <ul class="filter-value__brand__list">
+              <li>
+                <button class="btn filter-value__brand__list__btn filter-value__brand__list__btn_samsung">Samsung</button>
+              </li>
+              <li>
+                <button class="btn filter-value__brand__list__btn filter-value__brand__list__btn_apple">Apple</button>
+              </li>
+              <li>
+                <button class="btn filter-value__brand__list__btn filter-value__brand__list__btn_xiaomi">Xiaomi</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-value__camera">
+            <span class="filter-value__camera__text"> Количество камер: </span>
+            <ul class="filter-value__camera__list">
+              <li>
+                <button class="btn filter-value__camera__btn filter-value__camera__btn_three">3</button>
+              </li>
+              <li>
+                <button class="btn filter-value__camera__btn filter-value__camera__btn_two">2</button>
+              </li>
+              <li>
+                <button class="btn filter-value__camera__btn filter-value__camera__btn_one">1</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-value__color">
+            <span class="filter-value__color__text"> Цвет: </span>
+            <ul class="filter-value__color__list">
+              <li>
+                <button class="btn filter-value__color__list__btn filter-value__color__list__btn_white">белый</button>
+              </li>
+              <li>
+                <button class="btn filter-value__color__list__btn filter-value__color__list__btn_yellow">желтый</button>
+              </li>
+              <li>
+                <button class="btn filter-value__color__list__btn filter-value__color__list__btn_red">красный</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-value__popular">
+            <span class="filter-value__popular__text"> Только популярные: </span>
+            <div class="btn filter-value__popular-btn">pop</div>
+          </div>
+        </div>
+
+        <div class="filter-range">
+          <h2 class="filter-range__title">Фильтры по диапазону</h2>
+
+          <h5 class="filter-range__text">Количество на складе:</h5>
+          <div class="filter-range__slider-count">
+            <div class="filter-range__value filter-range__slider-count__mim">1</div>
+            <div class="filter-range__slider-count__slider"></div>
+            <div class="filter-range__value filter-range__slider-count__max">12</div>
+          </div>
+
+          <h5 class="filter-range__text">Год выхода на рынок:</h5>
+          <div class="filter-range__slider-year">
+            <div class="filter-range__value filter-range__slider-year__mim">2000</div>
+            <div class="filter-range__slider-year__slider"></div>
+            <div class="filter-range__value filter-range__slider-year__max">2022</div>
+          </div>
+        </div>
+
+        <div class="filter-sort">
+          <h5 class="filter-sort__title">Поиск</h5>
+          <div class="filter-sort__wrap-input">
+            <input class="filter-sort__input" placeholder="Введите текст" type="text" autofocus />
+            <div class="filter-sort__input__clear"></div>
+          </div>
+
+          <h5 class="filter-sort__title2">Сортировка</h5>
+          <div class="filter-sort__wrap-select">
+            <select class="filter-sort__select" name="sort-select">
+              <option value="1" selected>По названию, от А до Я</option>
+              <option value="2">По названию, от Я до А</option>
+              <option value="3">По году, по возрастанию</option>
+              <option value="4">По году, по убыванию</option>
+              <option value="5">По количеству, по возрастанию</option>
+              <option value="6">По количеству, по убыванию</option>
+            </select>
+          </div>
+
+          <div class="filter-sort__reset">
+            <button class="filter-sort__reset__btn filter-sort__reset__btn_filter">Сброс фильтров</button>
+            <button class="filter-sort__reset__btn filter-sort__reset__btn_setting">Сброс настроек</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+      <div class="main__container-message-basket">
+        <h2 class="main__container-message-basket__title">Извините, все слоты заполнены</h2>
+        <button class="main__container-message-basket__btn">Продолжить</button>
+      </div>
+
+      <div class="main__container-message">
+        <h2 class="main__container-message__title">Извините, совпадений не обнаружено</h2>
+      </div>
+
+      <div class="main__container-product"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="as">
+          <a class="footer__git-hub-link" target="_blank" href="https://github.com/DimaTeniuta"></a>
+        </div>
+        <div class="footer__year">&copy; Dzmitry Tsianiuta, 2022</div>
+        <div>
+          <a class="footer__rss-link" target="_blank" href="https://rs.school/js/"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

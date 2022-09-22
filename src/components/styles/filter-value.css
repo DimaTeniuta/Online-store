@@ -1,0 +1,180 @@
+.filter-value {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: var(--filter);
+  background-color: var(--color-background-box);
+  border: 1px solid var(--color-white);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.filter-value__title {
+  font-size: var(--font-regular18);
+  margin: 10px 0;
+}
+
+.filter-value__brand {
+  display: flex;
+  align-items: center;
+}
+
+.filter-value__brand__text {
+  font-size: var(--font-regular);
+}
+
+.filter-value__brand__list {
+  display: flex;
+}
+
+.filter-value__brand__list__btn {
+  width: 40px;
+  height: 40px;
+  margin: 10px 7px;
+  border: 0;
+  background-color: inherit;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  font-size: 0;
+  transition: 0.3s;
+}
+
+.filter-value__brand__list__btn.active {
+  filter: invert(9%) sepia(63%) saturate(461%) hue-rotate(322deg) brightness(83%) contrast(88%);
+}
+
+.filter-value__brand__list__btn_samsung {
+  background-image: url(../../assets/images/samsung.svg);
+}
+
+.filter-value__brand__list__btn_apple {
+  background-image: url(../../assets/images/apple.svg);
+}
+
+.filter-value__brand__list__btn_xiaomi {
+  background-image: url(../../assets/images/xiaomi.svg);
+}
+
+.filter-value__camera {
+  display: flex;
+  align-items: center;
+}
+
+.filter-value__camera__text {
+  font-size: var(--font-regular);
+}
+.filter-value__camera__list {
+  display: flex;
+}
+
+.filter-value__camera__btn {
+  width: 40px;
+  height: 40px;
+  margin: 10px 7px;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background-color: inherit;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-value__camera__btn.active {
+  filter: invert(9%) sepia(63%) saturate(461%) hue-rotate(322deg) brightness(83%) contrast(88%);
+}
+
+.filter-value__color {
+  display: flex;
+  align-items: center;
+}
+
+.filter-value__color__text {
+  font-size: var(--font-regular);
+}
+
+.filter-value__color__list {
+  display: flex;
+}
+
+.filter-value__color__list__btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 15px 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-value__color__list__btn.active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 10px;
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  border: solid var(--font-regular);
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.filter-value__color__list__btn_white {
+  background-color: var(--color-white);
+}
+
+.filter-value__color__list__btn_white.active::after {
+  border-color: #666;
+}
+
+.filter-value__color__list__btn_yellow {
+  background-color: #fdd700;
+}
+
+.filter-value__color__list__btn_red {
+  background-color: #fd0000;
+}
+
+.filter-value__popular {
+  display: flex;
+  align-items: center;
+}
+
+.filter-value__popular__text {
+  font-size: var(--font-regular);
+}
+
+.filter-value__popular-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 15px 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: #ffffff4d;
+  transition: 0.3s;
+}
+
+.filter-value__popular-btn.active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 10px;
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  border: solid var(--color-white);
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
